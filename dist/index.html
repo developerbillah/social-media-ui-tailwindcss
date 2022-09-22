@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Design Using Tailwindcss</title>
+    <!-- CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header Start  -->
+    <header class="bg-sky-900 py-1 w-full">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="w-6/12 flex justify-between items-center">
+          <!-- Logo  -->
+          <a href="">
+            <img src="./assets/images/glogo.png" alt="" class="w-12" />
+          </a>
+          <!-- Logo End -->
+
+          <!-- Search Box  -->
+          <div class="relative w-full max-w-md">
+            <span class="absolute top-[0.30rem] left-3">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" class="search_input" placeholder="Search..." />
+          </div>
+          <!-- Search Box End -->
+        </div>
+
+        <div class="w-6/12 flex items-center justify-between">
+          <!-- User Icon  -->
+          <div class="user_icon flex gap-x-8 ml-auto">
+            <button class="h-14 border-b-2 border-white text-gray-200 text-xl">
+              <i class="fa-solid fa-house"></i>
+            </button>
+
+            <button class="h-14 text-gray-200 text-xl">
+              <i class="fa-solid fa-user-group"></i>
+            </button>
+
+            <button class="h-14 text-gray-200 text-xl">
+              <i class="fa-solid fa-bell"></i>
+            </button>
+
+            <button class="h-14 text-gray-200 text-xl">
+              <i class="fa-solid fa-comment"></i>
+            </button>
+          </div>
+          <!-- Profile Link  -->
+          <div class="profile_link">
+            <a
+              href=""
+              class="flex items-center space-x-2 text-white ml-20 font-poppins"
+            >
+              <img
+                src="./assets/images/user.jpg"
+                alt=""
+                class="w-[2rem] h-[2rem] rounded-full mr-2"
+              />
+              Masum Billah
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End  -->
+
+    <section>
+      <div class="container mx-auto flex gap-x-3 mt-3">
+        <!-- Left Sidebar  -->
+        <div class="w-3/12">
+          <!-- Block Wrapper 1  -->
+          <div class="block_wrapper">
+            <h3 class="block_heading">Explore</h3>
+            <div class="flex flex-col">
+              <a href="" class="item_link">
+                <span class="mr-2 text-xl">
+                  <i class="fa-regular fa-floppy-disk"></i>
+                </span>
+                Saved Posts
+              </a>
+
+              <a href="" class="item_link">
+                <span class="mr-2">
+                  <i class="fa-regular fa-user"></i>
+                </span>
+                People
+              </a>
+
+              <a href="" class="item_link">
+                <span class="mr-2">
+                  <i class="fa-solid fa-people-group"></i>
+                </span>
+                Groups
+              </a>
+
+              <a href="" class="item_link">
+                <span class="mr-2">
+                  <i class="fa-solid fa-table-columns"></i>
+                </span>
+                Pages
+              </a>
+
+              <a href="" class="item_link">
+                <span class="mr-2">
+                  <i class="fa-regular fa-calendar"></i>
+                </span>
+                Events
+              </a>
+            </div>
+          </div>
+          <!-- Left Block Wrapper 1 End  -->
+
+          <!-- Left Block Wrapper 2  -->
+          <div class="block_wrapper">
+            <h3 class="block_heading">Download App</h3>
+            <div class="flex justify-between">
+              <a href="">
+                <img
+                  src="./assets/images/appstore.png"
+                  alt=""
+                  class="w-36 h-10"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./assets/images/google-play.svg"
+                  alt=""
+                  class="w-36 h-10"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- Left Block Wrapper 2 End -->
+
+          <!-- Left Blog Wrapper 3  -->
+          <div class="block_wrapper">
+            <h3 class="block_heading">Suggested People</h3>
+            <div class="add_people flex justify-between items-center">
+              <div class="pp flex items-center">
+                <img
+                  src="./assets/images/user.jpg"
+                  alt=""
+                  class="w-8 rounded-full"
+                />
+                <h5 class="font-semibold ml-2">Sadek Hossain</h5>
+              </div>
+              <div>
+                <button
+                  class="px-2 py-[0.2rem] border text-xs text-gray-600 font-semibold border-gray-300 rounded-sm"
+                >
+                  Add +
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Left Blog Wrapper 3 End -->
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- Status Area  -->
+        <div class="w-6/12">
+          <div class="block_wrapper">
+            <!-- Post Input Box  -->
+            <div class="post_box">
+              <div class="user_photo text-5xl text-gray-400">
+                <i class="fa-solid fa-circle-user"></i>
+              </div>
+              <div class="input_box w-full max-w-[33rem]">
+                <input
+                  type="text"
+                  class="post_input"
+                  placeholder="Create New Post"
+                />
+              </div>
+            </div>
+
+            <div class="post_attachment">
+              <span>
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                Background
+              </span>
+              <span>
+                <i class="fa-solid fa-camera-retro"></i>
+                Photo/Video
+              </span>
+              <span>
+                <i class="fa-regular fa-face-smile"></i>
+                Fellings/Activity
+              </span>
+            </div>
+            <!-- Post Input Box End  -->
+          </div>
+
+          <!-- Post Filter  -->
+          <div class="block_wrapper space-x-8 font-semibold font-poppins">
+            <a href="" class="text-red-700">Public Post</a>
+            <a href="">Friends Post</a>
+          </div>
+          <!-- Post Filter End -->
+
+          <div class="block_wrapper">
+            <!-- Single Post With Love React with Pull  -->
+            <div class="single_post_card flex flex-col">
+              <div class="author_meta flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./assets/images/user.jpg"
+                    alt=""
+                    class="rounded-full"
+                  />
+                  <div>
+                    <a href=""><h3 class="font-semibold">Masum Billah</h3></a>
+                    <p class="text-xs text-gray-400">
+                      17 Hours Ago <i class="fa-solid fa-globe"></i>
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+              </div>
+
+              <div class="post_meta mt-4 font-poppins text-gray-600 text-sm">
+                <p>Your Favorite Game</p>
+
+                <!-- Pull Item 1  -->
+                <div class="sing_vote my-3 flex items-center justify-between">
+                  <div class="flex items-center w-8/12">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="checked:bg-blue-500 w-5 h-5 active:bg-blue-500"
+                    />
+                    <div
+                      class="bg-gray-100 grow px-3 py-2 mx-3 w-full max-w-sm rounded-sm"
+                    >
+                      <p class="text-sm">Added by you</p>
+                      <h4 class="text-lg">Football</h4>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-end w-4/12">
+                    <div class="user">
+                      <img
+                        src="./assets/images/user.jpg"
+                        alt=""
+                        class="rounded-full"
+                      />
+                      <p class="text-xs text-gray-300">1 Vote</p>
+                    </div>
+                    <div class="close ml-5">
+                      <button
+                        class="w-5 h-5 bg-gray-300 text-slate-50 rounded-full"
+                      >
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pull item 2  -->
+                <div class="sing_vote my-3 flex items-center justify-between">
+                  <div class="flex items-center w-8/12">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="checked:bg-blue-500 w-5 h-5 active:bg-blue-500"
+                    />
+                    <div
+                      class="bg-gray-100 grow px-3 py-2 mx-3 w-full max-w-sm rounded-sm"
+                    >
+                      <p class="text-sm">Added by you</p>
+                      <h4 class="text-lg">Cricket</h4>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-end w-4/12">
+                    <div class="close ml-5">
+                      <button
+                        class="w-5 h-5 bg-gray-300 text-slate-50 rounded-full"
+                      >
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pull Item 3  -->
+                <div class="sing_vote my-3 flex items-center justify-between">
+                  <div class="flex items-center w-8/12">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="checked:bg-blue-500 w-5 h-5 active:bg-blue-500"
+                    />
+                    <div
+                      class="bg-gray-100 grow px-3 py-2 mx-3 w-full max-w-sm rounded-sm"
+                    >
+                      <p class="text-sm">Added by you</p>
+                      <h4 class="text-lg">Badminton</h4>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-end w-4/12">
+                    <div class="close ml-5">
+                      <button
+                        class="w-5 h-5 bg-gray-300 text-slate-50 rounded-full"
+                      >
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Friends Reaction  -->
+              <div class="reaction mt-5 flex items-center justify-between">
+                <div class="emoicon flex items-center">
+                  <img src="./assets/images/like.svg" alt="" class="w-5 h-5" />
+                  <img src="./assets/images/wow.svg" alt="" class="w-5 h-5" />
+                  <img src="./assets/images/love.svg" alt="" class="w-5 h-5" />
+                  <span class="ml-2 underline">You and 1 others</span>
+                </div>
+                <div class="comments">
+                  <p>3 <span class="text-gray-400">Comments</span></p>
+                </div>
+              </div>
+
+              <!-- Reaction Status  -->
+              <div class="post_feedback">
+                <button class="flex items-center">
+                  <img src="./assets/images/love.svg" alt="" class="w-6 h-6" />
+
+                  <span class="font-semibold ml-2 text-red-600"> Love</span>
+                </button>
+                <button class="flex items-center">
+                  <img
+                    src="./assets/images/like_1.svg"
+                    alt=""
+                    class="w-6 h-6"
+                  />
+                  <span class="font-semibold ml-2">Comments</span>
+                </button>
+                <button class="flex items-center">
+                  <img src="./assets/images/share.svg" alt="" class="w-6 h-6" />
+                  <span class="font-semibold ml-2"> Share</span>
+                </button>
+              </div>
+
+              <!-- Comment Box  -->
+              <div class="view_comments">
+                <span class="mt-5 block text-gray-400">View more comments</span>
+                <div
+                  class="post_commentbox mt-5 flex justify-between items-center"
+                >
+                  <div class="flex items-center justify-between">
+                    <img
+                      src="./assets/images/user.jpg"
+                      alt=""
+                      class="rounded-full w-8 h-8"
+                    />
+                    <div class="insert ml-8">
+                      <i class="fa-solid fa-face-smile"></i>
+                      <i class="fa-solid fa-paperclip"></i>
+                      <i class="fa-regular fa-note-sticky"></i>
+                    </div>
+                  </div>
+                  <div class="comment_box w-full max-w-md">
+                    <div class="relative">
+                      <span
+                        class="absolute top-[0.30rem] right-3 text-gray-500"
+                      >
+                        <i class="fa-solid fa-paper-plane"></i>
+                      </span>
+                      <input
+                        type="text"
+                        class="search_input text-gray-400"
+                        placeholder="Write a comment"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Single Post With Love React End -->
+          </div>
+
+          <!-- Post Card  -->
+          <div class="block_wrapper">
+            <!-- Single Post Card  -->
+            <div class="single_post_card flex flex-col">
+              <!-- Autor Meta  -->
+              <div class="author_meta flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./assets/images/nawshad.jpg"
+                    alt=""
+                    class="rounded-full"
+                  />
+                  <div>
+                    <a href=""><h3 class="font-semibold">Nawshad Ansari</h3></a>
+                    <p class="text-xs text-gray-400">
+                      25 Days Ago <i class="fa-solid fa-globe"></i>
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+              </div>
+
+              <!-- Post Meta  -->
+              <div class="post_meta mt-4 font-poppins text-gray-600 text-sm">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+                  quo debitis facere velit maiores ipsa perferendis accusantium
+                  ex quis cupiditate! Repellendus enim aut ipsa cumque? Sunt
+                  deleniti quaerat dolore quam dolorum! Sed placeat eligendi
+                  praesentium similique. Quam at soluta cumque! Quam commodi
+                  labore porro modi, consectetur at voluptate dolor cupiditate?
+                </p>
+              </div>
+
+              <!-- Reaction  -->
+              <div class="reaction mt-5 flex items-center justify-between">
+                <div class="emoicon flex items-center">
+                  <img src="./assets/images/like.svg" alt="" class="w-5 h-5" />
+                  <img src="./assets/images/wow.svg" alt="" class="w-5 h-5" />
+                  <img src="./assets/images/love.svg" alt="" class="w-5 h-5" />
+                  <span class="ml-2">9</span>
+                </div>
+                <div class="comments">
+                  <p>3 <span class="text-gray-400">Comments</span></p>
+                </div>
+              </div>
+
+              <!-- Reaction Status  -->
+              <div class="post_feedback">
+                <button class="flex items-center">
+                  <img
+                    src="./assets/images/like_1.svg"
+                    alt=""
+                    class="w-6 h-6"
+                  />
+
+                  <span class="font-semibold ml-2"> Like</span>
+                </button>
+                <button class="flex items-center">
+                  <img
+                    src="./assets/images/like_1.svg"
+                    alt=""
+                    class="w-6 h-6"
+                  />
+                  <span class="font-semibold ml-2">Comments</span>
+                </button>
+                <button class="flex items-center">
+                  <img src="./assets/images/share.svg" alt="" class="w-6 h-6" />
+                  <span class="font-semibold ml-2"> Share</span>
+                </button>
+              </div>
+
+              <!-- Comment Box  -->
+              <div class="mt-5 flex justify-between items-center">
+                <div class="flex items-center justify-between">
+                  <img
+                    src="./assets/images/nawshad.jpg"
+                    alt=""
+                    class="rounded-full w-8 h-8"
+                  />
+                  <div class="insert ml-8">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-regular fa-note-sticky"></i>
+                  </div>
+                </div>
+                <div class="relative w-full max-w-md">
+                  <span class="absolute top-[0.30rem] right-3 text-gray-500">
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </span>
+                  <input
+                    type="text"
+                    class="search_input text-gray-400"
+                    placeholder="Write a comment"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Single Post Card End -->
+          </div>
+
+          <div class="block_wrapper">
+            <!-- Single Post With Love React  -->
+            <div class="single_post_card flex flex-col">
+              <!-- Autor Meta  -->
+              <div class="author_meta flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./assets/images/alomgirvai.jpg"
+                    alt=""
+                    class="rounded-full"
+                  />
+                  <div>
+                    <a href=""
+                      ><h3 class="font-semibold">Alomgir Hossain</h3></a
+                    >
+                    <p class="text-xs text-gray-400">
+                      25 Days Ago <i class="fa-solid fa-globe"></i>
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+              </div>
+
+              <!-- Post Meta  -->
+              <div class="post_meta mt-4 font-poppins text-gray-600 text-sm">
+                <img src="./assets/images/post_bitacoin.jpg" alt="" />
+              </div>
+
+              <!-- Reaction Status -->
+              <div class="reaction mt-5 flex items-center justify-between">
+                <div class="emoicon flex items-center">
+                  <img src="./assets/images/like.svg" alt="" class="w-5 h-5" />
+                  <img src="./assets/images/wow.svg" alt="" class="w-5 h-5" />
+                  <img src="./assets/images/love.svg" alt="" class="w-5 h-5" />
+                  <span class="ml-2 underline">You and 1 others</span>
+                </div>
+                <div class="comments">
+                  <p>3 <span class="text-gray-400">Comments</span></p>
+                </div>
+              </div>
+
+              <!-- Reaction  -->
+              <div class="post_feedback">
+                <button class="flex items-center">
+                  <img src="./assets/images/love.svg" alt="" class="w-6 h-6" />
+
+                  <span class="font-semibold ml-2 text-red-600"> Love</span>
+                </button>
+                <button class="flex items-center">
+                  <img
+                    src="./assets/images/like_1.svg"
+                    alt=""
+                    class="w-6 h-6"
+                  />
+                  <span class="font-semibold ml-2">Comments</span>
+                </button>
+                <button class="flex items-center">
+                  <img src="./assets/images/share.svg" alt="" class="w-6 h-6" />
+                  <span class="font-semibold ml-2"> Share</span>
+                </button>
+              </div>
+
+              <!-- Comment Box -->
+              <div class="view_comments">
+                <span class="mt-5 block text-gray-400">View more comments</span>
+                <div
+                  class="post_commentbox mt-5 flex justify-between items-center"
+                >
+                  <div class="flex items-center justify-between">
+                    <img
+                      src="./assets/images/user.jpg"
+                      alt=""
+                      class="rounded-full w-8 h-8"
+                    />
+                    <div class="insert ml-8">
+                      <i class="fa-solid fa-face-smile"></i>
+                      <i class="fa-solid fa-paperclip"></i>
+                      <i class="fa-regular fa-note-sticky"></i>
+                    </div>
+                  </div>
+                  <div class="comment_box w-full max-w-md">
+                    <div class="relative">
+                      <span
+                        class="absolute top-[0.30rem] right-3 text-gray-500"
+                      >
+                        <i class="fa-solid fa-paper-plane"></i>
+                      </span>
+                      <input
+                        type="text"
+                        class="search_input text-gray-400"
+                        placeholder="Write a comment"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Single Post With Love React End -->
+          </div>
+
+          <div class="block_wrapper">
+            <!-- Single Post Card  -->
+            <div class="single_post_card flex flex-col">
+              <!-- Autor Meta  -->
+              <div class="author_meta flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./assets/images/plabon_vai.jpg"
+                    alt=""
+                    class="rounded-full"
+                  />
+                  <div>
+                    <a href=""><h3 class="font-semibold">Obi Plabon</h3></a>
+                    <p class="text-xs text-gray-400">
+                      25 Days Ago <i class="fa-solid fa-globe"></i>
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+              </div>
+
+              <!-- Post Meta  -->
+              <div class="post_meta mt-4 font-poppins text-gray-600 text-sm">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+                  quo debitis facere velit maiores ipsa perferendis accusantium
+                  ex quis cupiditate! Repellendus enim aut ipsa cumque? Sunt
+                  deleniti quaerat dolore quam dolorum! Sed placeat eligendi
+                  praesentium similique. Quam at soluta cumque! Quam commodi
+                  labore porro modi, consectetur at voluptate dolor cupiditate?
+                </p>
+              </div>
+
+              <!-- Reaction Status  -->
+              <div class="reaction mt-5 flex items-center justify-between">
+                <div class="emoicon flex items-center">
+                  <img src="./assets/images/like.svg" alt="" class="w-5 h-5" />
+                  <img src="./assets/images/wow.svg" alt="" class="w-5 h-5" />
+                  <img src="./assets/images/love.svg" alt="" class="w-5 h-5" />
+                  <span class="ml-2">9</span>
+                </div>
+                <div class="comments">
+                  <p>3 <span class="text-gray-400">Comments</span></p>
+                </div>
+              </div>
+
+              <!-- Reaction Status  -->
+              <div class="post_feedback">
+                <button class="flex items-center">
+                  <img
+                    src="./assets/images/like_1.svg"
+                    alt=""
+                    class="w-6 h-6"
+                  />
+
+                  <span class="font-semibold ml-2"> Like</span>
+                </button>
+                <button class="flex items-center">
+                  <img
+                    src="./assets/images/like_1.svg"
+                    alt=""
+                    class="w-6 h-6"
+                  />
+                  <span class="font-semibold ml-2">Comments</span>
+                </button>
+                <button class="flex items-center">
+                  <img src="./assets/images/share.svg" alt="" class="w-6 h-6" />
+                  <span class="font-semibold ml-2"> Share</span>
+                </button>
+              </div>
+
+              <!-- Comment Box  -->
+              <div class="view_comments">
+                <span class="mt-5 block text-gray-400">View more comments</span>
+                <div
+                  class="post_commentbox mt-5 flex justify-between items-center"
+                >
+                  <div class="flex items-center justify-between">
+                    <img
+                      src="./assets/images/nawshad.jpg"
+                      alt=""
+                      class="rounded-full w-8 h-8"
+                    />
+                    <div class="insert ml-8">
+                      <i class="fa-solid fa-face-smile"></i>
+                      <i class="fa-solid fa-paperclip"></i>
+                      <i class="fa-regular fa-note-sticky"></i>
+                    </div>
+                  </div>
+                  <div class="comment_box w-full max-w-md">
+                    <div class="relative">
+                      <span
+                        class="absolute top-[0.30rem] right-3 text-gray-500"
+                      >
+                        <i class="fa-solid fa-paper-plane"></i>
+                      </span>
+                      <input
+                        type="text"
+                        class="search_input text-gray-400"
+                        placeholder="Write a comment"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Single Post Card End -->
+          </div>
+          <!-- Post Card End -->
+        </div>
+        <!-- Status Area End -->
+
+        <!-- Right Sidebar -->
+        <div class="w-3/12">
+          <div class="block_wrapper">
+            <h3 class="block_heading border-b-[0.1rem] border-gray-100 pb-4">
+              You Might Like
+            </h3>
+
+            <div class="people">
+              <div class="like_people flex items-center pb-4">
+                <div class="p_photo text-gray-400 text-5xl">
+                  <i class="fa-solid fa-circle-user"></i>
+                </div>
+                <div class="info flex flex-col ml-2">
+                  <h4 class="people_name">Mehedi</h4>
+                  <p class="font-poppins block text-xs text-gray-500">mehedi</p>
+                </div>
+              </div>
+              <div>
+                <button class="btn text-gray-400">Ignore</button>
+                <button class="btn text-white bg-red-700">Follow</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="block_wrapper">
+            <h3 class="block_heading">Your Friends</h3>
+            <div class="friend_search relative w-full max-w-sm">
+              <span class="absolute top-[0.30rem] left-3 text-gray-500">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <input type="text" class="search_input" />
+            </div>
+
+            <div class="add_people flex justify-between items-center my-6">
+              <div class="pp flex items-center">
+                <img
+                  src="./assets/images/nawshad.jpg"
+                  alt=""
+                  class="w-8 rounded-full"
+                />
+                <h5 class="font-semibold ml-2">Nawsad Ansari</h5>
+              </div>
+            </div>
+
+            <div class="add_people flex justify-between items-center my-6">
+              <div class="pp flex items-center">
+                <img
+                  src="./assets/images/salman.jpg"
+                  alt=""
+                  class="w-8 rounded-full"
+                />
+                <h5 class="font-semibold ml-2">Salman Hossain</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Sidebar End -->
+      </div>
+    </section>
+  </body>
+</html>

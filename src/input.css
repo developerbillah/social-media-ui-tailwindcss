@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.block_wrapper {
+  @apply bg-white shadow-md p-5 rounded-md mb-5;
+}
+
+.block_heading {
+  @apply font-semibold text-xl font-poppins mb-5;
+}
+
+.item_link {
+  @apply font-poppins flex items-center py-2 text-gray-600;
+}
+
+.post_box {
+  @apply flex items-center border-gray-100 border-b-[0.1rem] pb-4;
+}
+
+.post_input {
+  @apply bg-gray-200 w-full rounded-full ml-4 px-4 py-3 focus:outline-none;
+}
+
+.search_input {
+  @apply w-full border rounded-full py-1 focus:outline-none pl-10 bg-gray-200;
+}
+
+.post_attachment {
+  @apply mx-8 py-2 flex items-center justify-between text-gray-600;
+}
+
+.people_name {
+  @apply font-poppins font-semibold block text-lg break-words text-gray-600;
+}
+
+.btn {
+  @apply px-8 py-1 border rounded-md font-poppins;
+}
+
+.post_feedback {
+  @apply bg-gray-100 py-2 px-14 flex items-center justify-between mt-5 rounded-sm;
+}

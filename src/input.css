@@ -41,5 +41,5 @@
 }
 
 .post_feedback {
-  @apply bg-gray-100 py-2 px-14 flex items-center justify-between mt-5 rounded-sm;
+  @apply bg-gray-100 py-2 px-3 flex items-center justify-between mt-5 rounded-sm md:px-14;
 }

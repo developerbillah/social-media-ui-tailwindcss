@@ -19,7 +19,6 @@
     <!-- Header Start  -->
     <header class="bg-sky-900 py-1 w-full">
       <div class="container mx-auto flex items-center justify-between">
-        <div class="w-6/12 flex justify-between items-center">
           <!-- Logo  -->
           <a href="">
             <img src="./assets/images/glogo.png" alt="" class="w-12" />
@@ -27,18 +26,16 @@
           <!-- Logo End -->
 
           <!-- Search Box  -->
-          <div class="relative w-full max-w-md">
+          <div class="relative hidden md:block">
             <span class="absolute top-[0.30rem] left-3">
               <i class="fa-solid fa-magnifying-glass"></i>
             </span>
             <input type="text" class="search_input" placeholder="Search..." />
           </div>
           <!-- Search Box End -->
-        </div>
 
-        <div class="w-6/12 flex items-center justify-between">
           <!-- User Icon  -->
-          <div class="user_icon flex gap-x-8 ml-auto">
+          <div class="user_icon flex gap-x-5 md:gap-x-8 ">
             <button class="h-14 border-b-2 border-white text-gray-200 text-xl">
               <i class="fa-solid fa-house"></i>
             </button>
@@ -59,26 +56,25 @@
           <div class="profile_link">
             <a
               href=""
-              class="flex items-center space-x-2 text-white ml-20 font-poppins"
+              class="flex items-center space-x-2 text-white font-poppins"
             >
               <img
                 src="./assets/images/user.jpg"
                 alt=""
                 class="w-[2rem] h-[2rem] rounded-full mr-2"
               />
-              Masum Billah
-              <i class="fa-solid fa-angle-down"></i>
+              <span class="hidden md:block">Masum Billah</span>
+              <span class="hidden md:block"><i class="fa-solid fa-angle-down"></i></span>
             </a>
           </div>
-        </div>
       </div>
     </header>
     <!-- Header End  -->
 
     <section>
-      <div class="container mx-auto flex gap-x-3 mt-3">
+      <div class="container mx-auto flex mt-3">
         <!-- Left Sidebar  -->
-        <div class="w-3/12">
+        <div class="hidden w-1/4 sm:block">
           <!-- Block Wrapper 1  -->
           <div class="block_wrapper">
             <h3 class="block_heading">Explore</h3>
@@ -169,7 +165,7 @@
         <!-- Left Sidebar End -->
 
         <!-- Status Area  -->
-        <div class="w-6/12">
+        <div class="grow mt-0 w-2/4 mx-4">
           <div class="block_wrapper">
             <!-- Post Input Box  -->
             <div class="post_box">
@@ -186,17 +182,17 @@
             </div>
 
             <div class="post_attachment">
-              <span>
+              <div>
                 <i class="fa-solid fa-circle-half-stroke"></i>
-                Background
-              </span>
-              <span>
+                <span class="hidden md:inline-block">Background</span>
+              </div>
+              <div>
                 <i class="fa-solid fa-camera-retro"></i>
-                Photo/Video
-              </span>
+                <span class="hidden md:inline-block">Photo/Video</span>
+              </div>
               <span>
                 <i class="fa-regular fa-face-smile"></i>
-                Fellings/Activity
+                <span class="hidden md:inline-block">Fellings/Activity</span>
               </span>
             </div>
             <!-- Post Input Box End  -->
@@ -371,14 +367,15 @@
                       alt=""
                       class="rounded-full w-8 h-8"
                     />
-                    <div class="insert ml-8">
+                  </div>
+                  <div class="comment_box flex justify-between items-center w-full max-w-lg">
+
+                    <div class="insert hidden md:block">
                       <i class="fa-solid fa-face-smile"></i>
                       <i class="fa-solid fa-paperclip"></i>
                       <i class="fa-regular fa-note-sticky"></i>
                     </div>
-                  </div>
-                  <div class="comment_box w-full max-w-md">
-                    <div class="relative">
+                    <div class="relative grow ml-2">
                       <span
                         class="absolute top-[0.30rem] right-3 text-gray-500"
                       >
@@ -473,28 +470,38 @@
               </div>
 
               <!-- Comment Box  -->
-              <div class="mt-5 flex justify-between items-center">
-                <div class="flex items-center justify-between">
-                  <img
-                    src="./assets/images/nawshad.jpg"
-                    alt=""
-                    class="rounded-full w-8 h-8"
-                  />
-                  <div class="insert ml-8">
-                    <i class="fa-solid fa-face-smile"></i>
-                    <i class="fa-solid fa-paperclip"></i>
-                    <i class="fa-regular fa-note-sticky"></i>
+              <div class="view_comments">
+                <span class="mt-5 block text-gray-400">View more comments</span>
+                <div
+                  class="post_commentbox mt-5 flex justify-between items-center"
+                >
+                  <div class="flex items-center justify-between">
+                    <img
+                      src="./assets/images/user.jpg"
+                      alt=""
+                      class="rounded-full w-8 h-8"
+                    />
                   </div>
-                </div>
-                <div class="relative w-full max-w-md">
-                  <span class="absolute top-[0.30rem] right-3 text-gray-500">
-                    <i class="fa-solid fa-paper-plane"></i>
-                  </span>
-                  <input
-                    type="text"
-                    class="search_input text-gray-400"
-                    placeholder="Write a comment"
-                  />
+                  <div class="comment_box flex justify-between items-center w-full max-w-lg">
+
+                    <div class="insert hidden md:block">
+                      <i class="fa-solid fa-face-smile"></i>
+                      <i class="fa-solid fa-paperclip"></i>
+                      <i class="fa-regular fa-note-sticky"></i>
+                    </div>
+                    <div class="relative grow ml-2">
+                      <span
+                        class="absolute top-[0.30rem] right-3 text-gray-500"
+                      >
+                        <i class="fa-solid fa-paper-plane"></i>
+                      </span>
+                      <input
+                        type="text"
+                        class="search_input text-gray-400"
+                        placeholder="Write a comment"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -568,37 +575,38 @@
 
               <!-- Comment Box -->
               <div class="view_comments">
-                <span class="mt-5 block text-gray-400">View more comments</span>
-                <div
-                  class="post_commentbox mt-5 flex justify-between items-center"
-                >
-                  <div class="flex items-center justify-between">
-                    <img
-                      src="./assets/images/user.jpg"
-                      alt=""
-                      class="rounded-full w-8 h-8"
-                    />
-                    <div class="insert ml-8">
-                      <i class="fa-solid fa-face-smile"></i>
-                      <i class="fa-solid fa-paperclip"></i>
-                      <i class="fa-regular fa-note-sticky"></i>
+                    <span class="mt-5 block text-gray-400">View more comments</span>
+                    <div
+                      class="post_commentbox mt-5 flex justify-between items-center"
+                    >
+                      <div class="flex items-center justify-between">
+                        <img
+                          src="./assets/images/user.jpg"
+                          alt=""
+                          class="rounded-full w-8 h-8"
+                        />
+                      </div>
+                      <div class="comment_box flex justify-between items-center w-full max-w-lg">
+    
+                        <div class="insert hidden md:block">
+                          <i class="fa-solid fa-face-smile"></i>
+                          <i class="fa-solid fa-paperclip"></i>
+                          <i class="fa-regular fa-note-sticky"></i>
+                        </div>
+                        <div class="relative grow ml-2">
+                          <span
+                            class="absolute top-[0.30rem] right-3 text-gray-500"
+                          >
+                            <i class="fa-solid fa-paper-plane"></i>
+                          </span>
+                          <input
+                            type="text"
+                            class="search_input text-gray-400"
+                            placeholder="Write a comment"
+                          />
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="comment_box w-full max-w-md">
-                    <div class="relative">
-                      <span
-                        class="absolute top-[0.30rem] right-3 text-gray-500"
-                      >
-                        <i class="fa-solid fa-paper-plane"></i>
-                      </span>
-                      <input
-                        type="text"
-                        class="search_input text-gray-400"
-                        placeholder="Write a comment"
-                      />
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
             <!-- Single Post With Love React End -->
@@ -686,18 +694,19 @@
                 >
                   <div class="flex items-center justify-between">
                     <img
-                      src="./assets/images/nawshad.jpg"
+                      src="./assets/images/user.jpg"
                       alt=""
                       class="rounded-full w-8 h-8"
                     />
-                    <div class="insert ml-8">
+                  </div>
+                  <div class="comment_box flex justify-between items-center w-full max-w-lg">
+
+                    <div class="insert hidden md:block">
                       <i class="fa-solid fa-face-smile"></i>
                       <i class="fa-solid fa-paperclip"></i>
                       <i class="fa-regular fa-note-sticky"></i>
                     </div>
-                  </div>
-                  <div class="comment_box w-full max-w-md">
-                    <div class="relative">
+                    <div class="relative grow ml-2">
                       <span
                         class="absolute top-[0.30rem] right-3 text-gray-500"
                       >
@@ -720,7 +729,7 @@
         <!-- Status Area End -->
 
         <!-- Right Sidebar -->
-        <div class="w-3/12">
+        <div class="hidden w-1/4 sm:block">
           <div class="block_wrapper">
             <h3 class="block_heading border-b-[0.1rem] border-gray-100 pb-4">
               You Might Like
